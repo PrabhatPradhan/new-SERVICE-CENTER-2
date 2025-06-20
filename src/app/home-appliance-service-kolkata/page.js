@@ -17,7 +17,7 @@ import {
     FaSink,
   } from "react-icons/fa";
   import { MdMicrowave } from "react-icons/md";
-const CardItem = ({ Icon, label, title, path }) => (
+const CardItem = ({ Icon, label, title }) => (
     <Link href="/usefullink">
       <div className="cursor-pointer bg-white border border-gray-200 rounded-md p-6 flex flex-col justify-between shadow-md hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
         <div className="flex items-start gap-4">

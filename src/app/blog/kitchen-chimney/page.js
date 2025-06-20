@@ -2,7 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../../Componets/Footer/Footer";
-import Navbar from "../../Componets/Navbar/Navbar"
+import Navbar from "../../Componets/Navbar/Navbar";
+
 export default function KitchenChimneyCards() {
   const cards = [
     {
@@ -40,38 +41,35 @@ export default function KitchenChimneyCards() {
   ];
 
   return (
-   <>
-   <Navbar/>
-    <div className="max-w-6xl mx-auto mt-12 px-4 py-10">
-      <h1 className="text-3xl font-bold text-center mb-10">
-        Kitchen Chimney Blog
-      </h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cards.map((card, index) => (
-          <Link
-            key={card.slug} // ✅ Unique key here
-            href={`/blog/kitchen-chimney/${card.slug}`}
-          >
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-              <Image
-                src={card.image}
-                alt={card.title}
-                width={400}
-                height={224}
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-6 flex flex-col justify-between h-full">
-                <div>
-                  <h2 className="text-2xl font-semibold mb-3">{card.title}</h2>
-                  <p className="text-gray-700 mb-4">{card.description}</p>
+    <>
+      <Navbar />
+      <div className="max-w-6xl mx-auto mt-12 px-4 py-10">
+        <h1 className="text-3xl font-bold text-center mb-10">
+          Kitchen Chimney Blog
+        </h1>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cards.map((card) => (
+            <Link key={card.slug} href={`/blog/kitchen-chimney/${card.slug}`}>
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  width={400}
+                  height={224}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-6 flex flex-col justify-between h-full">
+                  <div>
+                    <h2 className="text-2xl font-semibold mb-3">{card.title}</h2>
+                    <p className="text-gray-700 mb-4">{card.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer/>
-   </>
+      <Footer />
+    </>
   );
 }
