@@ -10,7 +10,7 @@ export default function AirConditionerCards() {
       title: "How to Service Your AC at Home",
       slug: "ac-service-at-home",
       image:
-        "https://plus.unsplash.com/premium_photo-1682088024868-09d8cbc8659f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/Images/ac-blog.jpeg",
       description:
         "Learn how to clean and maintain your air conditioner at home. This step-by-step guide helps you avoid costly repairs and improve your AC's efficiency all summer long.",
     },
@@ -18,7 +18,7 @@ export default function AirConditionerCards() {
       title: "Top 5 Signs Your AC Needs Repair",
       slug: "signs-ac-needs-repair",
       image:
-        "https://images.unsplash.com/photo-1695760177249-85c742906940?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/Images/ac-blog-2.jpeg",
       description:
         "Is your AC making noise or not cooling enough? Discover the most common signs that your air conditioner needs immediate attention from a technician.",
     },
@@ -26,7 +26,7 @@ export default function AirConditionerCards() {
       title: "Best Energy-Efficient Air Conditioners 2025",
       slug: "energy-efficient-ac-2025",
       image:
-        "https://plus.unsplash.com/premium_photo-1682126012378-859ca7a9f4cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/Images/ac-blog-3.jpeg",
       description:
         "Explore top-rated energy-efficient ACs for 2025. We compare models, power usage, features, and give recommendations for different budgets and room sizes.",
     },
@@ -34,7 +34,7 @@ export default function AirConditionerCards() {
       title: "Why Regular AC Maintenance Matters",
       slug: "importance-of-ac-maintenance",
       image:
-        "https://images.unsplash.com/photo-1603516084021-1cfa399b64ca?q=80&w=1329&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/Images/ac-blog-4.jpeg",
       description:
         "Neglecting AC maintenance can reduce performance and lifespan. Understand the benefits of scheduling seasonal checkups and how it saves you money long-term.",
     },
@@ -43,7 +43,7 @@ export default function AirConditionerCards() {
   return (
    <>
    <Navbar/>
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div className="max-w-6xl mx-auto px-4 mt-12 py-10">
       <h1 className="text-3xl font-bold text-center mb-10">Air Conditioner Guides</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((card) => (

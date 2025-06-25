@@ -40,7 +40,7 @@ export default function Page() {
       <Navbar />
       <section
           style={{
-            backgroundImage: `url('https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small_2x/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg')`, // Replace with actual image path or URL
+            backgroundImage: `url('Images/Appointment.jpg')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

@@ -128,94 +128,94 @@ export default function Page() {
   return (
     <>
       <Navbar />
+      <div className="bg-orange-200 px-4 py-6 mt-16 md:px-10 md:py-10 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
+  {/* Left Section */}
+  <div className="space-y-4 w-full md:w-1/2 md:ml-12">
+    <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-snug">
+      All Appliances Repair Service and Maintenance
+    </h2>
+
+    <div className="w-32 md:w-40">
+      <Image
+        src="https://images.unsplash.com/photo-1613755448170-4310858ddbd5?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Kolkata City"
+        width={200}
+        height={100}
+        className="rounded"
+      />
+    </div>
+
+    <ul className="text-black text-base md:text-xl space-y-2">
+      <li className="flex items-center gap-2">
+        <FaCheckCircle className="text-red-600" /> Refrigerator, Washing Machine
+      </li>
+      <li className="flex items-center gap-2">
+        <FaCheckCircle className="text-red-600" /> Air Conditioner, Microwave Oven
+      </li>
+      <li className="flex items-center gap-2">
+        <FaCheckCircle className="text-red-600" /> RO Water Purifier, Kitchen Chimney
+      </li>
+      <li className="flex items-center gap-2">
+        <FaCheckCircle className="text-red-600" /> Geyser, TV
+      </li>
+    </ul>
+
+    <div className="flex items-center gap-2 text-blue-800 font-bold text-lg md:text-xl">
+      <FaPhoneAlt /> 18001201514
+    </div>
+  </div>
+
+  {/* Right Section - Form */}
+  <div className="bg-white w-full md:w-[32rem] rounded-xl p-4 md:p-6 border border-gray-400 shadow-md">
+    <h3 className="text-center text-lg font-bold mb-4">SERVICE CENTER</h3>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        className="w-full p-2 border rounded outline-none"
+        onChange={handleChange}
+      />
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone"
+        className="w-full p-2 border rounded outline-none"
+        onChange={handleChange}
+      />
+      <select
+        name="service"
+        className="w-full p-2 border rounded outline-none"
+        onChange={handleChange}
+      >
+        <option value="">Select Your Services</option>
+        <option value="Refrigerator">Refrigerator</option>
+        <option value="Washing Machine">Washing Machine</option>
+        <option value="TV">TV</option>
+        <option value="Microwave">Microwave</option>
+        <option value="Geyser">Geyser</option>
+        <option value="Air Conditioner">Air Conditioner</option>
+      </select>
+      <textarea
+        name="address"
+        rows="3"
+        placeholder="Your Full Address"
+        className="w-full p-2 border rounded outline-none"
+        onChange={handleChange}
+      ></textarea>
+      <button
+        type="submit"
+        className="w-full py-2 bg-orange-600 text-white rounded hover:bg-orange-500 transition"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
      <div className="mr-10 ml-10  ">
 
-     <div className="bg-orange-200 p-6  mt-20 md:p-10 flex flex-col md:flex-row justify-between items-center gap-8">
-        {/* Left Section */}
-        <div className="space-y-4 w-full md:w-1/2">
-          <h2 className="text-4xl font-bold text-gray-800">
-            All Appliances Repair Service and Maintenance
-          </h2>
-
-          <div className="w-40">
-            <Image
-              src="https://images.unsplash.com/photo-1613755448170-4310858ddbd5?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with actual image path
-              alt="Kolkata City"
-              width={200}
-              height={100}
-            />
-          </div>
-
-          <ul className="text-black-600 text-2xl  space-y-2">
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-black-600" /> Refrigerator, Washing
-              Machine
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-black-600" /> Air conditioner,
-              Microwave Oven
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-black-600" /> Ro Water Purifier,
-              Kitchen Chimney
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-black-600" /> Geyser, TV
-            </li>
-          </ul>
-
-          <div className="flex items-center gap-2 text-blue-800 font-bold text-xl">
-            <FaPhoneAlt /> 18001201514
-          </div>
-        </div>
-
-        {/* Right Section - Form */}
-        <div className="bg-white  md:w-1/2 rounded-xl p-6 border border-gray-400 shadow">
-          <h3 className="text-center text-lg font-bold mb-4">SERVICE CENTER</h3>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              className="w-full p-2 border rounded outline-none"
-              onChange={handleChange}
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone"
-              className="w-full p-2 border rounded outline-none"
-              onChange={handleChange}
-            />
-            <select
-              name="service"
-              className="w-full p-2 border rounded outline-none"
-              onChange={handleChange}
-            >
-              <option value="">Select Your Services</option>
-              <option value="Refrigerator">Refrigerator</option>
-              <option value="Washing Machine">Washing Machine</option>
-              <option value="TV">TV</option>
-              <option value="Microwave">Microwave</option>
-              <option value="Geyser">Geyser</option>
-              <option value="Air Conditioner">Air Conditioner</option>
-            </select>
-            <textarea
-              name="address"
-              rows="3"
-              placeholder="Your Full Address"
-              className="w-full p-2 border rounded outline-none"
-              onChange={handleChange}
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full py-2 bg-orange-600 text-white rounded hover:bg-orange-500"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
+    
 
       <div className="bg-white  p-6 md:p-10 border border-gray-200">
         {/* Image */}

@@ -106,7 +106,7 @@ export default function ServiceCenterCard() {
             </button>
           </form>
 
-          <p className="text-center text-white mt-4 font-bold">Call Now : 18001201514</p>
+          <p className="text-center text-white mt-4 font-bold">Call Now : 6390137479</p>
         </div>
       </div>
 

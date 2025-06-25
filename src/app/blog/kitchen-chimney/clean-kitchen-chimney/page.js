@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://blog.sfapp.magefan.top/media/glen-india.myshopify.com/images/0001step/image2.jpg"
+            src="/Images/chimney-3.jpg"
             alt="Cleaning Kitchen Chimney"
             className="w-full h-96 object-cover"
           />

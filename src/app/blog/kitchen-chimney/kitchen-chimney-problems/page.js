@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://sunkitchenchimneyservice.com/wp-content/uploads/2022/08/chimney-not-working.jpg"
+            src=  "/Images/chimne-4.jpg" 
             alt="Kitchen Chimney Problems"
             className="w-full h-96 object-cover"
           />

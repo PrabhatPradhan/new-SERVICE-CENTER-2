@@ -4,12 +4,9 @@ import Navbar from "../../Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
 import Image from "next/image";
-
+import images from "../../../../public/Images/whater-cular.png"
 // Image array defined at the top
-const images = [
-  "https://shop.kent.co.in/cdn/shop/files/A_Info-Grand-Plus-New-W.png?v=1741241715",
-];
-
+ 
 export default function Page() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
@@ -97,7 +94,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Ro Water Purifier Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -113,7 +110,7 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://images.unsplash.com/photo-1719002906692-32dcef8010e7?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={images}
                   alt="Service Center"
                   width={200}
                   height={400}
@@ -128,7 +125,7 @@ export default function Page() {
               >
                 Book Now
               </button>
-              <a href="tel:9876543210">
+              <a href="tel:6390137479">
                 <button className="mt-3 px-4 py-1 text-white bg-orange-500 hover:bg-orange-700 rounded">
                   Call Now
                 </button>
@@ -142,9 +139,9 @@ export default function Page() {
       <div className="max-w-7xl mx-auto px-4 py-10 font-sans">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            {images[0] && (
+            {images && (
               <Image
-                src={images[0]}
+                src={images}
                 alt="Product Image"
                 width={400}
                 height={400}
@@ -188,7 +185,7 @@ export default function Page() {
               >
                 Book Now
               </button>
-              <a href="tel:9876543210" className="flex-1">
+              <a href="tel:6390137479" className="flex-1">
                 <button className="w-full bg-orange-500 text-white px-4 py-3 rounded hover:bg-orange-700">
                   Call now
                 </button>

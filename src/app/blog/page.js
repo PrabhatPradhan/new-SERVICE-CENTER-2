@@ -90,7 +90,7 @@ export default function Card() {
       {/* Header Section */}
       <section
         style={{
-          backgroundImage: `url('https://www.shutterstock.com/image-photo/flat-lay-home-office-desktop-260nw-1869950761.jpg')`,
+          backgroundImage: `url('Images/blog.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

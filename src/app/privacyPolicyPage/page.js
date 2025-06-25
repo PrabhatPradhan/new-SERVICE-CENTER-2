@@ -5,6 +5,7 @@ import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard"
 import Link from "next/link";
 import StatsOfNumbers from "../Componets/StatsOfNumbers/StatsOfNumbers";
 import Image from "next/image";
+import Policies  from "../../../public/Images/Privacy Policies-2.jpg"
 export default function PrivacyPolicyPage() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <EnquiryForm />
       <section
         style={{
-          backgroundImage: `url('https://www.mothersrecipe.com/cdn/shop/files/privacy-policy.png?v=1689226683')`,
+          backgroundImage: `url('Images/privacy-policy.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -45,7 +46,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
             <Image
-              src="https://t4.ftcdn.net/jpg/06/28/95/19/360_F_628951920_Wpi0yQTeJ16NGVC37WkCOsRoDqTMxCqU.jpg"
+              src={Policies}
               alt="Privacy document illustration"
               width={500}
               height={700}

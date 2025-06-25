@@ -4,9 +4,10 @@ import Navbar from "../../Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
 import Image from "next/image";
+import doubleDoor from "../../../../public/Images/Double Door.jpeg"
+import selectedImage from "../../../../public/Images/DoubleDoor.png"
 export default function Page() {
-  const selectedImage =
-    "https://media.croma.com/image/upload/v1710850266/Croma%20Assets/Large%20Appliances/Refrigerator/Images/267758_0_kicih5.png";
+    
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleOpenBooking = () => setIsBookingOpen(true);
@@ -21,7 +22,7 @@ export default function Page() {
     "VAIO",
     "acer",
   ];
-  const phoneNumber = "tel:+919999999999"; // Replace with actual phone number
+  const phoneNumber = "tel:+6390137479"; // Replace with actual phone number
 
   return (
     <>
@@ -123,8 +124,8 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://images.unsplash.com/photo-1640685270311-49830c7a64e9?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Service Center"
+                  src={doubleDoor} 
+                    alt="Service Center"
                   width={200}
                   height={400}
                   className="rounded"

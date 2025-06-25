@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import {
   FaSnowflake,
   FaTachometerAlt,
- 
   FaTv,
   FaFire,
   FaWater,
@@ -13,6 +12,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import { MdMicrowave } from "react-icons/md";
+
 const icons = [
   { Icon: FaSnowflake, label: "REFRIGERATOR", angle: -90 },
   { Icon: FaTachometerAlt, label: "WASHING MACHINE", angle: -35 },
@@ -141,8 +141,11 @@ export default function Hero() {
       </section>
 
       {/* Special Services Section */}
-      <section className="bg-orange-500 text-white text-center py-16 px-4">
-        <p className="uppercase text-sm tracking-widest font-bold text-black mb-2">
+      <section
+        className="text-white text-center py-16 px-4 bg-cover bg-center"
+        style={{ backgroundImage: `url('/Images/hero-bg.jpg')` }}
+      >
+        <p className="uppercase text-sm tracking-widest font-bold text-orange-600 mb-2">
           Special Services
         </p>
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">

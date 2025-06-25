@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://www.liljegrenlaw.com/wp-content/uploads/2019/07/llg-jul-microwave.jpg"
+            src="/Images/wasing-4.jpg" 
             alt="Microwave Oven Safety Practices"
             className="w-full h-96 object-cover"
           />

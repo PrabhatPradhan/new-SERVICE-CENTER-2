@@ -62,7 +62,7 @@ export default function FAQPage() {
 
       <section
         style={{
-          backgroundImage: `url('https://t4.ftcdn.net/jpg/13/39/27/63/360_F_1339276324_nCmzvU4dOdgkRmkcahfo9IvuBcM5tmwb.jpg')`,
+          backgroundImage: `url('Images/faq.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

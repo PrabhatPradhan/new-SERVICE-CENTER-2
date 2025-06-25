@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://img.freepik.com/premium-photo/young-handsome-repairman-worker-suit-with-professional-tools-box-is-fixing-washing-machine-bathroom_283617-2848.jpg?w=360"
+            src= "/Images/wasing-3.avif" 
             alt="Washing Machine Troubleshooting"
             className="w-full h-96 object-cover"
           />

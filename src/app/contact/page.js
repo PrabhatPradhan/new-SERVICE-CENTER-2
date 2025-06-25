@@ -19,7 +19,7 @@ export default function Page() {
         {/* Header Section */}
         <section
           style={{
-            backgroundImage: `url('https://aoneeducationpoint.com/wp-content/uploads/2022/01/contact-to-infinity-training-center-kuwait.jpg')`, // Replace with actual image path or URL
+            backgroundImage: `url('Images/Contact.jpg')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -43,7 +43,7 @@ export default function Page() {
             <div className="flex flex-wrap gap-5 mb-10">
               {/* Phone */}
               <a
-                href="tel:+6845550102"
+                href="tel:+6390137479"
                 className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px] hover:shadow-md transition"
               >
                 <img
@@ -54,14 +54,14 @@ export default function Page() {
                 <div>
                   <strong className="text-sm text-[#666] block">Phone:</strong>
                   <span className="text-base font-bold text-[#111]">
-                    (+684) 555-0102
+                  6390137479
                   </span>
                 </div>
               </a>
 
               {/* Email */}
               <a
-                href="mailto:info@example.com"
+                href="mailto:info@newtackserviceplatform.com"
                 className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px] hover:shadow-md transition"
               >
                 <img
@@ -74,7 +74,7 @@ export default function Page() {
                     Email Us
                   </strong>
                   <span className="text-base font-bold text-[#111]">
-                    info@example.com
+                  info@newtackservice.com
                   </span>
                 </div>
               </a>

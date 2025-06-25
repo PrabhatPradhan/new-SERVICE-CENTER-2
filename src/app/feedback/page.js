@@ -57,7 +57,7 @@ export default function Page() {
     <EnquiryForm />
     <section
           style={{
-            backgroundImage: `url('https://www.newbreedrevenue.com/hs-fs/hubfs/shutterstock_695711272.jpg?width=5001&name=shutterstock_695711272.jpg')`, // Replace with actual image path or URL
+            backgroundImage: `url('Images/feedback.jpg')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

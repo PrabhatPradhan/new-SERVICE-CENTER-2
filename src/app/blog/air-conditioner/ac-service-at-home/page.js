@@ -9,7 +9,7 @@ export default function Page() {
     <div className="min-h-screen bg-gray-100 py-12 px-6 lg:px-24">
       <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
         <Image
-          src="https://5.imimg.com/data5/SELLER/Default/2022/2/GE/JW/SY/25289616/front-loading-washing-machine-repair-service.png"
+          src="/Images/ac-blog.jpeg"
           alt="Washing Machine Repair"
           width={1200}
           height={400}

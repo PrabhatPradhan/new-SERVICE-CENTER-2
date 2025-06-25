@@ -10,7 +10,7 @@ export default function page() {
      <Navbar/>
      <section
           style={{
-            backgroundImage: `url('https://www.shutterstock.com/image-photo/smartphone-tablet-pc-mock-on-260nw-1287357250.jpg')`, // Replace with actual image path or URL
+            backgroundImage: `url('Images/amu.webp')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

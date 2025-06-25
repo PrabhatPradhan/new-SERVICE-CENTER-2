@@ -4,10 +4,9 @@ import Navbar from "../../Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
 import Image from "next/image";
+import selectedImage from "../../../../public/Images/tv.jpeg"
 export default function Page() {
-  const selectedImage =
-    "https://images.unsplash.com/photo-1640685270311-49830c7a64e9?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleOpenBooking = () => setIsBookingOpen(true);
   const handleCloseBooking = () => setIsBookingOpen(false);
@@ -106,7 +105,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Tv Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -122,7 +121,7 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://images.unsplash.com/photo-1640685270311-49830c7a64e9?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={selectedImage}
                   alt="Service Center"
                   width={200}
                   height={400}
@@ -137,7 +136,7 @@ export default function Page() {
               >
                 Book Now
               </button>
-              <a href="tel:9876543210">
+              <a href="tel:6390137479">
                 <button className="mt-3 px-4 py-1 text-white bg-orange-500 hover:bg-orange-700 rounded">
                   Call Now
                 </button>
@@ -197,7 +196,7 @@ export default function Page() {
               >
                 Book Now
               </button>
-              <a href="tel:9876543210" className="flex-1">
+              <a href="tel:6390137479" className="flex-1">
                 <button className="w-full bg-orange-500 text-white px-4 py-3 rounded hover:bg-orange-700">
                   Call now
                 </button>

@@ -110,7 +110,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Geyser Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -142,7 +142,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:+0123888555"
+                href="tel:+6390137479"
                 className="mt-3 px-4 py-1 text-white bg-orange-500 hover:bg-orange-700 rounded text-center"
               >
                 Call Now
@@ -204,7 +204,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:+0123888555"
+                href="tel:+6390137479"
                 className="flex-1 bg-orange-500 text-white px-4 py-3 rounded hover:bg-orange-700 text-center"
               >
                 Call now

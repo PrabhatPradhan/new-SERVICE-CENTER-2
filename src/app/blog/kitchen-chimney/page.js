@@ -10,7 +10,7 @@ export default function KitchenChimneyCards() {
       title: "How to Choose the Right Kitchen Chimney",
       slug: "choose-kitchen-chimney",
       image:
-        "https://blog.wonderchef.com/wp-content/uploads/2022/05/Guide-to-buying-the-right-chimney.jpg",
+        "/Images/chimney-1.jpg",
       description:
         "Choosing the right kitchen chimney can be confusing. Learn how to pick one based on suction power, filter type, and kitchen size.",
     },
@@ -18,7 +18,7 @@ export default function KitchenChimneyCards() {
       title: "Top 5 Kitchen Chimneys in 2025 – Expert",
       slug: "top-kitchen-chimneys-2025",
       image:
-        "https://www.livemint.com/lm-img/img/2025/04/08/960x540/Best_selling_chimneys_1744105740027_1744105745783.jpg",
+        "/Images/chimneys-2.avif",
       description:
         "We've reviewed the top-rated kitchen chimneys for 2025. Find out which brands and models offer the best features for Indian kitchens.",
     },
@@ -26,7 +26,7 @@ export default function KitchenChimneyCards() {
       title: "Cleaning Your Kitchen Chimney – Steps",
       slug: "clean-kitchen-chimney",
       image:
-        "https://blog.sfapp.magefan.top/media/glen-india.myshopify.com/images/0001step/image2.jpg",
+        "/Images/chimney-3.jpg",
       description:
         "Oil, grease, and smoke can clog your chimney. Follow this simple step-by-step guide to clean your chimney effectively at home.",
     },
@@ -34,7 +34,7 @@ export default function KitchenChimneyCards() {
       title: "Common Kitchen Chimney Problems & Fixes",
       slug: "kitchen-chimney-problems",
       image:
-        "https://sunkitchenchimneyservice.com/wp-content/uploads/2022/08/chimney-not-working.jpg",
+        "/Images/chimne4.jpg",
       description:
         "Is your chimney making noise or not sucking smoke? Here are the most common issues users face and how to fix them quickly.",
     },

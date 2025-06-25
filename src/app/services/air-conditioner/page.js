@@ -5,10 +5,10 @@ import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
  
 import Image from "next/image"
-
+import acImage from "../../../../public/Images/service-ac.webp"
+import acCard from "../../../../public/Images/service-ac-card.webp"
 // ✅ Just use a simple constant
-const selectedImage =
-  "https://5.imimg.com/data5/SELLER/Default/2025/3/494009823/CH/DI/DI/81272504/2tr-75500-voltas-fac-241-cz2mm-r32-500x500.jpg";
+ 
 
 export default function Page() {
   const [isBookingOpen, setIsBookingOpen] = React.useState(false);
@@ -110,7 +110,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Split Ac Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -126,7 +126,7 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://images-cdn.ubuy.co.in/67d32049ad8f2367622995b0-midea-6-000-btu-115v-window-air.jpg"
+                  src={acCard}
                   alt="Service Center"
                   width={200}
                   height={400}
@@ -142,7 +142,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:+0123888555"
+                href="tel:+6390137479"
                 className="mt-3 px-4 py-1 text-white bg-orange-500 hover:bg-orange-700 rounded text-center"
               >
                 Call Now
@@ -157,7 +157,7 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <Image
-              src={selectedImage}
+              src={acImage}
               alt="Product Image"
               width={500} // or set dynamically
               height={500}
@@ -204,7 +204,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:+0123888555"
+                href="tel:+6390137479"
                 className="flex-1 bg-orange-500 text-white px-4 py-3 rounded hover:bg-orange-700 text-center"
               >
                 Call now

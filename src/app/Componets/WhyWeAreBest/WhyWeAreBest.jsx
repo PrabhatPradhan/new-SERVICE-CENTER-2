@@ -29,7 +29,7 @@ export default function WhyWeAreBest() {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
             {/* Call Button */}
-            <a href="tel:+1234567898" className="block w-full md:w-auto">
+            <a href="tel:+18001201514" className="block w-full md:w-auto">
               <div className="relative overflow-hidden font-bold py-3 px-5 sm:px-6 rounded-full shadow-md group hover:scale-105 transition-transform duration-300 cursor-pointer text-center">
                 <span className="absolute inset-0 bg-gradient-to-t from-orange-500 to-yellow-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0 rounded-full"></span>
                 <div className="relative z-10 flex items-center justify-center gap-2 sm:gap-3 text-white">
@@ -37,7 +37,7 @@ export default function WhyWeAreBest() {
                     <FiPhoneCall className="text-base sm:text-lg" />
                   </div>
                   <span className="text-white text-base sm:text-lg font-bold">
-                    +123 456-7898
+                    +18001201514
                   </span>
                 </div>
               </div>

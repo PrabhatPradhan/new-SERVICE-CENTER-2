@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-
+import productImage from "../../../../public/Images/kitchen-chimney.jpg"
 export default function Page() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
@@ -10,11 +10,10 @@ export default function Page() {
   const handleCloseBooking = () => setIsBookingOpen(false);
 
   const companies = ["NOKIA", "ASUS", "CASIO", "DELL", "Panasonic", "VAIO", "acer"];
-  const phoneNumber = "+919999999999";
+  const phoneNumber = "+6390137479";
 
-  const productImage =
-    "https://5.imimg.com/data5/SELLER/Default/2021/1/XK/LR/PI/120736883/elisa-automatic-kitchen-chimney.jpg";
 
+    
   return (
     <>
       <br />
@@ -90,7 +89,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Kitchen Chimney Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -106,7 +105,7 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://plus.unsplash.com/premium_photo-1670527200668-ad4b53a1aefb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={productImage}
                   alt="Service Center"
                   width={200}
                   height={400}

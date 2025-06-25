@@ -4,10 +4,10 @@ import Navbar from "../../Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
 import Image from "next/image";
+import selectedImage from "../../../../public/Images/oven.jpeg"
+import cardImage from "../../../../public/Images/oven-card.jpg"
 export default function Page() {
-  const selectedImage =
-    "https://images.unsplash.com/photo-1640685270311-49830c7a64e9?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleOpenBooking = () => setIsBookingOpen(true);
   const handleCloseBooking = () => setIsBookingOpen(false);
@@ -106,7 +106,7 @@ export default function Page() {
           <div key={index} className="border p-4 rounded shadow-md">
             <div className="flex">
               <div>
-                <h3 className="font-bold text-lg">Double Door Repair</h3>
+                <h3 className="font-bold text-lg">Microwave Oven Repair</h3>
                 <p className="text-sm text-gray-600">
                   Double Door Refrigerator Checkup
                 </p>
@@ -122,7 +122,7 @@ export default function Page() {
               </div>
               <div>
                 <Image
-                  src="https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_3000,f_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/76743e70-e21b-11ee-9368-e2f64a9402cb.jpg"
+                  src={cardImage} 
                   alt="Service Center"
                   width={200}
                   height={400}
@@ -138,7 +138,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:9876543210"
+                href="tel:6390137479"
                 className="mt-3 px-4 py-1 text-white bg-orange-500 hover:bg-orange-700 rounded text-center"
               >
                 Call Now
@@ -199,7 +199,7 @@ export default function Page() {
                 Book Now
               </button>
               <a
-                href="tel:9876543210"
+                href="tel:6390137479"
                 className="flex-1 bg-orange-500 text-white px-4 py-3 rounded hover:bg-orange-700 text-center"
               >
                 Call now

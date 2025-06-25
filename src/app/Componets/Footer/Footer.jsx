@@ -31,25 +31,26 @@ export default function Footer() {
 
           {/* Contact Cards */}
           <div className="space-y-4">
-            <a href="tel:+16845550102" className="block">
+            <a href="tel:+6390137479" className="block">
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaPhoneAlt className="text-xl mt-1 text-white" />
                 <div>
-                  <p className="text-sm text-gray-300">Call Us</p>
+                 {/* <p className="text-sm text-gray-300">Call Us</p> */}
                   <p className="font-bold text-lg text-white">
-                    (+684) 555-0102
+                  6390137479
+ 
                   </p>
                 </div>
               </div>
             </a>
 
-            <a href="mailto:info@example.com" className="block">
+            <a href="mailto:info@newtackserviceplatform.com" className="block">
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaEnvelope className="text-xl mt-1 text-white" />
                 <div>
-                  <p className="text-sm text-gray-300">Email Us</p>
-                  <p className="font-bold text-lg text-white">
-                    info@example.com
+                  {/* <p className="text-sm text-gray-300">Email Us</p> */}
+                  <p className="font-bold     text-white">
+                  info@newtackservice.com
                   </p>
                 </div>
               </div>
@@ -64,7 +65,7 @@ export default function Footer() {
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaMapMarkerAlt className="text-xl mt-1 text-white" />
                 <div>
-                  <p className="text-sm text-gray-300">Address</p>
+                  {/* <p className="text-sm text-gray-300">Address</p> */}
                   <p className="font-bold text-lg text-white">
                     2972 Westheimer 96 Rd.
                   </p>

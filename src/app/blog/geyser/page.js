@@ -9,7 +9,7 @@ export default function CardsPage() {
       title: "Refrigerator Repair Guide",
       slug: "refrigerator-repair-guide",
       image:
-        "https://starappliancerepaircc.com/wp-content/uploads/2024/03/The-Essential-Guide-to-Appliance-Repair-Troubleshooting-Maintenance-and-Hiring-Professionals.jpg",
+        "/Images/wasing-Card.jpg",
       description:
         "A comprehensive guide to diagnosing and fixing common issues with household refrigerators. From faulty thermostats to broken door seals, this guide covers all the basics you need to get your fridge running efficiently again.",
     },
@@ -17,7 +17,7 @@ export default function CardsPage() {
       title: "Air Conditioner Maintenance Tips",
       slug: "air-conditioner-maintenance-tips",
       image:
-        "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.asap-appliance-repair.com/wp-content/uploads/2019/06/DIshwasher.jpg",
+        "/Images/wasing-card-2.jpg",
       description:
         "Keep your AC running like new with our expert maintenance tips. Learn how to clean filters, check refrigerant levels, and avoid common issues that reduce performance and raise electricity bills.",
     },
@@ -25,14 +25,14 @@ export default function CardsPage() {
       title: "Washing Machine Troubleshooting",
       slug: "washing-machine-troubleshooting",
       image:
-        "https://img.freepik.com/premium-photo/young-handsome-repairman-worker-suit-with-professional-tools-box-is-fixing-washing-machine-bathroom_283617-2848.jpg?w=360",
+        "/Images/wasing-3.avif",
       description:
         "Understand why your washing machine won’t start, spin, or drain. This guide provides step-by-step fixes for common washer issues and helps you decide when it's time to call a professional.",
     },
     {
       title: "Microwave Oven Safety Practices",
       slug: "microwave-oven-safety-practices",
-      image: "https://www.liljegrenlaw.com/wp-content/uploads/2019/07/llg-jul-microwave.jpg",
+      image: "/Images/wasing-4.jpg",
       description:
         "Avoid microwave hazards with our safety checklist. We explain the do's and don'ts of microwave use and share tips to extend its lifespan and avoid unnecessary repairs.",
     },

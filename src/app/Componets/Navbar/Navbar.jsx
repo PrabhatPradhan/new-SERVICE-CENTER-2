@@ -124,7 +124,7 @@ export default function Header() {
           <div className="text-sm leading-tight">
             <p className="font-bold text-gray-800">Have any Questions?</p>
             <p className="text-blue-900 font-semibold text-sm">
-              +0 123 888 555
+              +18001201514
             </p>
           </div>
         </div>

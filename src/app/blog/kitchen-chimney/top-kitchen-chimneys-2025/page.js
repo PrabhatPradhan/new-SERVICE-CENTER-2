@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://www.livemint.com/lm-img/img/2025/04/08/960x540/Best_selling_chimneys_1744105740027_1744105745783.jpg"
+            src= "/Images/chimneys-2.avif" 
             alt="Top Kitchen Chimneys"
             className="w-full h-96 object-cover"
           />

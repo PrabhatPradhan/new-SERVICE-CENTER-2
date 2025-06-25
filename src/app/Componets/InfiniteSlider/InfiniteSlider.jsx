@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function InfiniteSlider() {
   const imageUrls = [
-    "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
-    "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
-    "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
-    "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+    "/Images/InfiniteSlider.jpg",
+    "/Images/InfiniteSlider-2.png",
+    "/Images/InfiniteSlider.jpg",
+    "/Images/InfiniteSlider-2.png",
+    "/Images/InfiniteSlider.jpg",
+    "/Images/InfiniteSlider-2.png",
   ];
 
   return (

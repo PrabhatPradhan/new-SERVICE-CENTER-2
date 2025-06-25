@@ -9,7 +9,9 @@ import Link from "next/link";
 import Image from "next/image";
 import InfiniteSlider from '../Componets/InfiniteSlider/InfiniteSlider'
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
-
+import lefticon from "../../../public/Images/about-left-icon.webp";
+import righticon from "../../../public/Images/about-right-icon.webp";
+import camara from "../../../public/Images/about-camara.avif"
 export default function Page() {
   return (
     <>
@@ -62,7 +64,7 @@ export default function Page() {
                 {/* Stat 1 */}
                 <div className="flex items-center gap-3 transition-transform duration-300 hover:scale-105">
                   <Image
-                    src="https://cdn-icons-png.freepik.com/256/9540/9540741.png?semt=ais_hybrid"
+                    src={lefticon}
                     alt="Worker Icon"
                     width={40}
                     height={40}
@@ -77,7 +79,7 @@ export default function Page() {
                 {/* Stat 2 */}
                 <div className="flex items-center gap-3 transition-transform duration-300 hover:scale-105">
                   <Image
-                    src="https://cdn-icons-png.flaticon.com/512/9727/9727444.png"
+                    src={righticon}
                     alt="Experience Icon"
                     width={40}
                     height={40}
@@ -138,7 +140,7 @@ export default function Page() {
         <section className="relative bg-black text-white overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://img.freepik.com/free-photo/electrician-working-electric-car_53876-124171.jpg"
+              src={camara}
               alt="background"
               width={1200}
               height={675}
@@ -163,12 +165,12 @@ export default function Page() {
 
               {/* Phone Row */}
               <div className="mt-6 flex items-center gap-4">
-                <a href="tel:+6845550102">
+                <a href="tel:+6390137479">
                   <div className="text-3xl cursor-pointer">📞</div>
                 </a>
                 <div>
                   <p className="text-sm">Call anytime</p>
-                  <p className="text-xl font-semibold">+000-987458741</p>
+                  <p className="text-xl font-semibold">6390137479</p>
                 </div>
               </div>
             </div>

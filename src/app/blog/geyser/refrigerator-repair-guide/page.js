@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://starappliancerepaircc.com/wp-content/uploads/2024/03/The-Essential-Guide-to-Appliance-Repair-Troubleshooting-Maintenance-and-Hiring-Professionals.jpg"
+            src="/Images/wasing-Card.jpg"
             alt="Refrigerator Repair Guide"
             className="w-full h-96 object-cover"
           />

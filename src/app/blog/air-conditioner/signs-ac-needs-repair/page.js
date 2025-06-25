@@ -10,7 +10,7 @@ export default function BlogDetailPage() {
       <div className="min-h-screen bg-gray-100 py-12 px-6 mt-12 lg:px-24">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1695760177249-85c742906940?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/Images/ac-blog-2.jpeg"
             alt="Signs Your AC Needs Repair"
             className="w-full h-96 object-cover"
           />
@@ -26,7 +26,7 @@ export default function BlogDetailPage() {
 
             <div className="flex items-center gap-4 mb-8 text-sm text-gray-500">
               <Image
-                src="https://randomuser.me/api/portraits/men/40.jpg"
+                src="/Images/ac-blog-2.jpeg"
                 alt="Author"
                 width={40}
                 height={40}

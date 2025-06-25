@@ -162,12 +162,24 @@ export default function EnquiryForm() {
 
               <div className="pt-4 pb-2 pl-4 text-sm">
                 <p className="flex items-center text-black font-semibold">
-                  <FaPhoneAlt className="mr-2" /> Call Us:{" "}
-                  <span className="ml-1 font-bold">8800542270</span>
+                  <FaPhoneAlt className="mr-2" />
+                  Call Us:{" "}
+                  <a
+                    href="tel:6390137479"
+                    className="ml-1 font-bold text-blue-600 hover:underline"
+                  >
+                    6390137479
+                  </a>
                 </p>
                 <p className="flex items-center text-black font-semibold mt-1">
-                  <FaEnvelope className="mr-2" /> Send Us Mail:{" "}
-                  <span className="ml-1 font-bold">info@mintoholidays.com</span>
+                  <FaEnvelope className="mr-2" />
+                  Send Us Mail:{" "}
+                  <a
+                    href="mailto:info@newtackserviceplatform.com"
+                    className="ml-1 font-bold text-blue-600 hover:underline"
+                  >
+                    info@newtackserviceplatform.com
+                  </a>
                 </p>
               </div>
             </div>
