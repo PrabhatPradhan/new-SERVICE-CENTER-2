@@ -4,6 +4,7 @@ import Footer from "../Componets/Footer/Footer";
 import Navbar from "../Componets/Navbar/Navbar";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
@@ -240,18 +241,19 @@ export default function Page() {
       </div>
 
       <div className="mr-10 ml-10  ">
-        <div className="bg-white  p-6 md:p-10 border border-gray-200">
+      
+        <div className="bg-white   p-2 border border-gray-200">
           {/* Image */}
+          
           <div className="w-full flex justify-center mb-6">
             <Image
               src="https://plus.unsplash.com/premium_photo-1749885795369-c8a013958e6b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D" // replace with correct image
               alt="Appliances Image"
-              width={1200}
+              width={1400}
               height={10}
               className="rounded h-96"
             />
           </div>
-
           {/* Text Content */}
           <div className="text-gray-800 space-y-4">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800">
@@ -299,13 +301,13 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="bg-white  p-6 md:p-10 border border-gray-200">
+        <div className="bg-white  p-2 border border-gray-200">
           {/* Image */}
           <div className="w-full flex justify-center mb-6">
             <Image
               src="https://images.unsplash.com/photo-1601993198415-19d86ae28424?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // replace with correct image
               alt="Appliances Image"
-              width={1200}
+              width={1400}
               height={10}
               className="rounded h-96"
             />
@@ -358,6 +360,90 @@ export default function Page() {
             </p>
           </div>
         </div>
+        <section className="max-w-5xl mx-auto px-6 py-12">
+      <div>
+      <h2 className="text-3xl font-semibold text-center mb-10">
+        Frequently Asked Questions
+      </h2>
+      </div>
+      <div>
+       <h3 className="text-2xl font-bold text-gray-800 mb-2">
+            Refrigerator repair feedback
+          </h3>
+       </div>
+
+      <div className="flex flex-col md:flex-row  ">
+        {/* Left side */}
+       
+        <div className="flex-1 text-center md:text-left">
+          
+          <p className="text-4xl font-bold text-gray-900">4.2</p>
+
+          <div className="flex justify-center md:justify-start gap-1 my-2">
+            <FaStar className="text-orange-500" />
+            <FaStar className="text-orange-500" />
+            <FaStar className="text-orange-500" />
+            <FaStar className="text-orange-500" />
+            <FaStarHalfAlt className="text-orange-500" />
+          </div>
+
+          <p className="text-sm text-gray-600">customer review 560</p>
+        </div>
+
+        {/* Right side bars */}
+        <div className="flex-1 space-y-3 text-sm">
+          {/* 5 Star */}
+          <div className="flex items-center gap-3">
+            <span className="w-5">5</span>
+            <FaStar className="text-yellow-400 text-xs" />
+            <div className="flex-1 h-3 bg-gray-200 rounded">
+              <div className="h-full bg-yellow-400" style={{ width: "60%" }}></div>
+            </div>
+            <span className="w-10 text-right text-gray-700">60%</span>
+          </div>
+
+          {/* 4 Star */}
+          <div className="flex items-center gap-3">
+            <span className="w-5">4</span>
+            <FaStar className="text-yellow-400 text-xs" />
+            <div className="flex-1 h-3 bg-gray-200 rounded">
+              <div className="h-full bg-yellow-400" style={{ width: "20%" }}></div>
+            </div>
+            <span className="w-10 text-right text-gray-700">20%</span>
+          </div>
+
+          {/* 3 Star */}
+          <div className="flex items-center gap-3">
+            <span className="w-5">3</span>
+            <FaStar className="text-yellow-400 text-xs" />
+            <div className="flex-1 h-3 bg-gray-200 rounded">
+              <div className="h-full bg-yellow-400" style={{ width: "11%" }}></div>
+            </div>
+            <span className="w-10 text-right text-gray-700">11%</span>
+          </div>
+
+          {/* 2 Star */}
+          <div className="flex items-center gap-3">
+            <span className="w-5">2</span>
+            <FaStar className="text-yellow-400 text-xs" />
+            <div className="flex-1 h-3 bg-gray-200 rounded">
+              <div className="h-full bg-yellow-400" style={{ width: "5%" }}></div>
+            </div>
+            <span className="w-10 text-right text-gray-700">5%</span>
+          </div>
+
+          {/* 1 Star */}
+          <div className="flex items-center gap-3">
+            <span className="w-5">1</span>
+            <FaStar className="text-yellow-400 text-xs" />
+            <div className="flex-1 h-3 bg-gray-200 rounded">
+              <div className="h-full bg-yellow-400" style={{ width: "4%" }}></div>
+            </div>
+            <span className="w-10 text-right text-gray-700">4%</span>
+          </div>
+        </div>
+      </div>
+    </section>
         <section className="bg-gray-100 py-10">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold underline underline-offset-4 decoration-black">

@@ -9,10 +9,9 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import Image from "next/image";
- 
 import Link from "next/link";
+
 export default function Footer() {
-   
   return (
     <footer className="bg-[#0b1c3f] text-white px-6 mt-8 py-12 md:px-20">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -23,8 +22,8 @@ export default function Footer() {
             <Image
               src="https://newtackserviceplatform.com/public/front/images/flogo.webp"
               alt="Fixhero Logo"
-              width={160} // width matching w-40 (40 * 4px)
-              height={40} // height matching h-10 (10 * 4px)
+              width={160}
+              height={40}
               className="object-contain"
             />
           </div>
@@ -35,10 +34,8 @@ export default function Footer() {
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaPhoneAlt className="text-xl mt-1 text-white" />
                 <div>
-                 {/* <p className="text-sm text-gray-300">Call Us</p> */}
-                  <p className="font-bold text-lg text-white">
-                  6390137479
- 
+                  <p className="font-bold text-lg text-white truncate w-[180px]">
+                    6390137479
                   </p>
                 </div>
               </div>
@@ -48,9 +45,8 @@ export default function Footer() {
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaEnvelope className="text-xl mt-1 text-white" />
                 <div>
-                  {/* <p className="text-sm text-gray-300">Email Us</p> */}
-                  <p className="font-bold     text-white">
-                  info@newtackservice.com
+                  <p className="font-bold text-white truncate w-[180px]">
+                    info@newtackservice.com
                   </p>
                 </div>
               </div>
@@ -65,8 +61,7 @@ export default function Footer() {
               <div className="hover:bg-orange-500 bg-[#1e3057] rounded-md p-4 flex items-start gap-4 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
                 <FaMapMarkerAlt className="text-xl mt-1 text-white" />
                 <div>
-                  {/* <p className="text-sm text-gray-300">Address</p> */}
-                  <p className="font-bold text-lg text-white">
+                  <p className="font-bold text-lg text-white truncate w-[180px]">
                     2972 Westheimer 96 Rd.
                   </p>
                 </div>
@@ -76,161 +71,115 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://x.com/"
-              className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
-            >
-              <FaTimes />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="https://behance.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
-            >
-              <FaBehance />
-            </a>
+            {[
+              { icon: <FaFacebookF />, href: "https://facebook.com" },
+              { icon: <FaInstagram />, href: "https://instagram.com" },
+              { icon: <FaTimes />, href: "https://x.com/" },
+              { icon: <FaLinkedinIn />, href: "https://linkedin.com" },
+              { icon: <FaBehance />, href: "https://behance.net" },
+            ].map((social, idx) => (
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:shadow-2xl hover:bg-orange-500 hover:scale-[1.03] hover:-translate-y-1 w-10 h-10 bg-[#1e3057] flex items-center justify-center rounded-full text-white"
+              >
+                {social.icon}
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* Links Columns */}
+        {/* About Company */}
         <div>
           <h3 className="text-lg font-bold border-l-4 border-orange-400 pl-2 mb-4">
             About Company
           </h3>
-
           <ul className="space-y-2 text-gray-300">
-            <li>
-              <Link href="/about" className="hover:text-white transition">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/company-history"
-                className="hover:text-white transition"
-              >
-                Company History
-              </Link>
-            </li>
-            <li>
-              <Link href="/our-team" className="hover:text-white transition">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/our-projects"
-                className="hover:text-white transition"
-              >
-                Our Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/work-process"
-                className="hover:text-white transition"
-              >
-                Work Process
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/pricing-plan"
-                className="hover:text-white transition"
-              >
-                Pricing Plan
-              </Link>
-            </li>
+            {[
+              ["About", "/about"],
+              ["Company History", "/company-history"],
+              ["Our Team", "/our-team"],
+              ["Our Projects", "/our-projects"],
+              ["Work Process", "/work-process"],
+              ["Pricing Plan", "/pricing-plan"],
+            ].map(([label, path], idx) => (
+              <li key={idx}>
+                <Link
+                  href={path}
+                  className="hover:text-white transition truncate block"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
+
+        {/* Useful Information */}
         <div>
           <h3 className="text-lg font-bold border-l-4 border-orange-400 pl-2 mb-4">
             Useful Information
           </h3>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <Link href="/contact" className="hover:text-white transition">
+              <Link
+                href="/contact"
+                className="hover:text-white transition truncate block"
+              >
                 Contact Us
               </Link>
             </li>
-            <li>Our Team</li>
-            <li>Cost Calculator</li>
-            <li>Testimonials</li>
-            <li>Pricing Plan</li>
+            <li className="truncate">Our Team</li>
+            <li className="truncate">Cost Calculator</li>
+            <li className="truncate">Testimonials</li>
+            <li className="truncate">Pricing Plan</li>
             <li>
-              <Link href="/faq" className="hover:text-white transition">
+              <Link
+                href="/faq"
+                className="hover:text-white transition truncate block"
+              >
                 Faq
               </Link>
             </li>
             <li>
               <Link
                 href="/privacyPolicyPage"
-                className="hover:text-white transition"
+                className="hover:text-white transition truncate block"
               >
                 PrivacyPolicy
               </Link>
             </li>
           </ul>
         </div>
+
+        {/* Additional Links */}
         <div>
           <h3 className="text-lg font-bold border-l-4 border-orange-400 pl-2 mb-4">
             Additional Links
           </h3>
           <ul className="space-y-2 text-gray-300">
-            <Link href="/home-appliance-service-kolkata">
-              <button className="px-2 py-2 bg-blue-950 hover:bg-orange-500 text-white rounded-md text-base hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer">
-                <span className="font-semibold">
-                  Home appliance service Kolkata
-                </span>
-              </button>
-            </Link>
-
-            <li>Latest News</li>
-            <li>Our Services</li>
-            <li>General Repairs</li>
-            <li>Our Projects</li>
-            <li>Work Process</li>
-            <li>Service Area</li>
+            <li>
+              <Link href="/home-appliance-service-kolkata">
+                <button className="w-full px-2 py-2 bg-blue-950 hover:bg-orange-500 text-white rounded-md text-base hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative cursor-pointer truncate">
+                  <span className="font-semibold truncate block">
+                    Home appliance service Kolkata
+                  </span>
+                </button>
+              </Link>
+            </li>
+            <li className="truncate">Latest News</li>
+            <li className="truncate">Our Services</li>
+            <li className="truncate">General Repairs</li>
+            <li className="truncate">Our Projects</li>
+            <li className="truncate">Work Process</li>
+            <li className="truncate">Service Area</li>
           </ul>
         </div>
       </div>
 
-      {/* CTA */}
-      {/* <div className="mt-12 bg-[#1e3057] px-6 py-6 rounded-md flex flex-col md:flex-row items-center justify-between">
-          <p className="text-white text-lg font-semibold">
-            Get Free Estimate. <span className="text-gray-300 font-normal">Our online scheduling and payment system is safe</span>
-          </p>
-          <button className="mt-4 md:mt-0 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-bold">
-            REQUEST WITH ONLINE FORM
-          </button>
-        </div> */}
-
-      {/* Bottom */}
+      {/* Footer Bottom */}
       <div className="text-gray-400 text-sm mt-8 text-center md:text-left md:flex md:justify-between">
         <p>© 2025 . Designed By webidea.</p>
         <div className="space-x-4 mt-2 md:mt-0">

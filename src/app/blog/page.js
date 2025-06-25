@@ -16,14 +16,16 @@ import Navbar from "../Componets/Navbar/Navbar";
 
 // ✅ Card Item Component
 const CardItem = ({ Icon, label, title }) => (
-  <div className="cursor-pointer bg-white border border-gray-200 rounded-md p-6 flex flex-col justify-between shadow-md hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+  <div className="cursor-pointer bg-white border border-gray-200 rounded-md p-6 flex flex-col justify-between shadow-md hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative h-full">
     <div className="flex items-start gap-4">
-      <Icon className="w-12 h-12 text-orange-500" />
-      <div>
-        <p className="text-xs text-orange-500 font-semibold uppercase">
+      <Icon className="w-12 h-12 text-orange-500 flex-shrink-0" />
+      <div className="flex flex-col overflow-hidden">
+        <p className="text-xs text-orange-500 font-semibold uppercase truncate w-[160px]">
           {label}
         </p>
-        <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+        <h3 className="text-xl font-semibold text-gray-900 truncate w-[180px]">
+          {title}
+        </h3>
       </div>
     </div>
     <span className="absolute bottom-0 right-0 w-4 h-4 bg-orange-500"></span>
@@ -31,7 +33,7 @@ const CardItem = ({ Icon, label, title }) => (
 );
 
 // ✅ Main Component
-export default function Card() {
+export default function BlogCardsPage() {
   const cardData = [
     {
       Icon: FaSnowflake,

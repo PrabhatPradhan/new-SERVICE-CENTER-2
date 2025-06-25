@@ -42,7 +42,7 @@ export default function Hero() {
     <>
       <section className="flex items-center   justify-around flex-col pb-2 md:flex-row   gap-0 px-6 md:px-20 py-6 bg-[#f0f6fc] relative overflow-hidden">
         {/* Left Content */}
-        <div className="max-w-xl z-10 px-6 md:px-0 space-y-4">
+        <div className="max-w-xl z-10 px-6 md:px-0 space-y-4 md:w-1/2">
           <p className="text-orange-600 font-semibold text-sm flex items-center gap-2">
             <span className="text-xl">🛠️</span> 100% SATISFACTION GUARANTEE
           </p>

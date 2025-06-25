@@ -34,10 +34,10 @@ export default function Page() {
 
       {/* Booking Popup */}
       {isBookingOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-md w-full max-w-md shadow-lg">
+        <div className="fixed inset-0 z-50   flex items-center justify-center bg-orange-500 bg-opacity-50">
+          <div className="bg-orange-500 p-6 rounded-md w-full max-w-md shadow-lg">
             <h2 className="text-xl font-bold mb-4">Book Service</h2>
-            <form className="space-y-4">
+            <form className="space-y-4 bg-orange-500">
               <input
                 type="text"
                 placeholder="Full Name"
@@ -61,13 +61,13 @@ export default function Page() {
                 <button
                   type="button"
                   onClick={handleCloseBooking}
-                  className="px-4 py-2 border rounded hover:bg-gray-100"
+                  className="px-4 py-2 border rounded bg-white hover:bg-gray-100"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
+                  className="px-4 py-2  rounded  bg-white text-black  hover:bg-gray-200"
                 >
                   Submit
                 </button>
