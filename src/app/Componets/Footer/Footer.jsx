@@ -232,7 +232,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="text-gray-400 text-sm mt-8 text-center md:text-left md:flex md:justify-between">
-        <p>© 2025 Fixhero. Designed By RSTheme.</p>
+        <p>© 2025 . Designed By webidea.</p>
         <div className="space-x-4 mt-2 md:mt-0">
           <span>Sitemap</span>
           <span>•</span>

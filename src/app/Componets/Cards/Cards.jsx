@@ -10,7 +10,7 @@ import {
   FaTachometerAlt,
   FaFire,
   FaSink,
-  FaPhoneAlt,
+  
 } from "react-icons/fa";
 import { MdMicrowave } from "react-icons/md";
 
@@ -124,15 +124,8 @@ export default function Card() {
         </div>
       </div>
 
-      {/* Call-to-Action (Optional) */}
-      <div className="text-center mt-6">
-        <a
-          href="tel:18001201514"
-          className="inline-flex items-center gap-2 text-blue-800 font-bold text-lg md:text-xl hover:underline"
-        >
-          <FaPhoneAlt /> 18001201514
-        </a>
-      </div>
+     
+       
     </>
   );
 }
